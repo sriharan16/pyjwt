@@ -43,11 +43,18 @@ Fixed
 
 Added
 ~~~~~
+<<<<<<< HEAD
 
 - Add to_jwk static method to ECAlgorithm by @leonsmith in `#732 <https://github.com/jpadilla/pyjwt/pull/732>`__
 - Expose get_algorithm_by_name as new method by @sirosen in `#773 <https://github.com/jpadilla/pyjwt/pull/773>`__
 - Add type hints to jwt/help.py and add missing types dependency by @kkirsche in `#784 <https://github.com/jpadilla/pyjwt/pull/784>`__
 - Add cacheing functionality for JWK set by @wuhaoyujerry in `#781 <https://github.com/jpadilla/pyjwt/pull/781>`__
+=======
+- Add to_jwk static method to ECAlgorithm by @leonsmith in https://github.com/jpadilla/pyjwt/pull/732
+- Add ``get_algorithm_by_name`` as a method of ``PyJWS`` objects, and expose
+  the global PyJWS method as part of the public API
+- Adding validation for `issued_at` when `iat > (now + leeway)` as `ImmatureSignatureError` by @sriharan16 in https://github.com/jpadilla/pyjwt/pull/794
+>>>>>>> b8ccfc99c9506b6c1a8772c5b50bdb9363ed6603
 
 `v2.4.0 <https://github.com/jpadilla/pyjwt/compare/2.3.0...2.4.0>`__
 -----------------------------------------------------------------------
